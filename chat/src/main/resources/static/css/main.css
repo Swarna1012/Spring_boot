@@ -1,0 +1,301 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.58;
+    color: #333;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.username-page{
+    background: "https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-yellow-tourism-trolley-case-to-chat-with-image_13961.jpg";
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-control {
+    width: 100%;
+    min-height: 38px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    padding-left: 10px;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+a {
+    color: #6db33f;
+}
+
+button {
+    box-shadow: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    outline: none;
+    line-height: 100%;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0.6rem 1rem;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    min-height: 38px;
+}
+
+button.default {
+    background-color: #e8e8e8;
+    color: #333;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+button.primary {
+    background-color: #6db33f;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+}
+
+button.accent {
+    background-color: #6db33f;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+}
+
+#username-page {
+    text-align: center;
+}
+
+.username-page-container {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+    margin-top: 42px;
+    vertical-align: middle;
+    position: relative;
+    padding: 35px 55px 35px;
+    min-height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -160px;
+}
+
+.username-page-container .username-submit {
+    margin-top: 10px;
+}
+
+
+#chat-page {
+    position: relative;
+    height: 100%;
+}
+
+.chat-container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    margin-top: 30px;
+    height: calc(100% - 60px);
+    max-height: 600px;
+    position: relative;
+}
+
+#chat-page ul {
+    list-style-type: none;
+    background-color: #FFF;
+    margin: 0;
+    overflow: auto;
+    overflow-y: scroll;
+    padding: 0 20px 0px 20px;
+    height: calc(100% - 150px);
+}
+
+#chat-page #messageForm {
+    padding: 20px;
+}
+
+#chat-page ul li {
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+#chat-page ul li p {
+    margin: 0;
+}
+
+#chat-page .event-message {
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#chat-page .event-message p {
+    color: #777;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+#chat-page .chat-message {
+    padding-left: 68px;
+    position: relative;
+}
+
+#chat-page .chat-message i {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+#chat-page .chat-message span {
+    color: #333;
+    font-weight: 600;
+}
+
+#chat-page .chat-message p {
+    color: #43464b;
+}
+
+#messageForm .input-group input {
+    float: left;
+    width: calc(100% - 85px);
+}
+
+#messageForm .input-group button {
+    float: left;
+    width: 80px;
+    height: 38px;
+    margin-left: 5px;
+}
+
+.chat-header {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ececec;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.connecting {
+    padding-top: 5px;
+    text-align: center;
+    color: #777;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 730px) {
+
+    .chat-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .chat-container {
+        height: calc(100% - 30px);
+    }
+
+    .username-page-container {
+        width: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 25px;
+    }
+
+    #chat-page ul {
+        height: calc(100% - 120px);
+    }
+
+    #messageForm .input-group button {
+        width: 65px;
+    }
+
+    #messageForm .input-group input {
+        width: calc(100% - 70px);
+    }
+
+    .chat-header {
+        padding: 10px;
+    }
+
+    .connecting {
+        top: 60px;
+    }
+
+    .chat-header h2 {
+        font-size: 1.1em;
+    }
+}
+
+/*
+https://cdn.dribbble.com/users/7248715/screenshots/15641981/media/46918f2a08483d44a9afa59c07137e5b.png?resize=1000x750&vertical=center
+https://149842033.v2.pressablecdn.com/wp-content/uploads/2019/11/Colorlib-Reg-Form-v7.jpg
+https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-simple-geometric-yellow-gradient-e-commerce-background-image_199447.jpg
+data:image/jpeg;base64,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
+
+https://c4.wallpaperflare.com/wallpaper/27/995/633/simple-background-violet-gradient-wallpaper-preview.jpg
+*/
+
